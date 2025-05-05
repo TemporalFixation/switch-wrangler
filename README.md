@@ -129,6 +129,13 @@ python tools/convert_macs.py
 
 ## 🛠 Example Input Files
 
+### `convert-macs.csv`
+```
+00:11:22:33:44:55
+aa-bb-cc-dd-ee-ff
+1122.3344.5566
+```
+
 ### `mac_addresses.txt`
 ```
 aaaa.bbbb.cccc
@@ -149,6 +156,18 @@ ws-c2960-24tt-l,c2960-lanbasek9-mz.150-2.se11
 ```
 
 ---
+
+## 🛠 Example Output Files
+
+### `converted_macs.csv`
+```
+original,normalized
+00:11:22:33:44:55,0011.2233.4455
+aa-bb-cc-dd-ee-ff,aabb.ccdd.eeff
+1122.3344.5566,1122.3344.5566
+
+```
+
 
 ## 👷 Roadmap
 
